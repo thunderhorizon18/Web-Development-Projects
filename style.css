@@ -1,0 +1,277 @@
+/* Reset and Global Styles */
+* {
+  margin: 1;
+  padding: 0;
+  /* border: 2px solid black; */ /* Uncomment to add a border to all elements */
+}
+
+body {
+  text-align: center;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap");
+
+/* Link Styles */
+a {
+  color: rgb(4, 4, 234); /* Default color */
+}
+
+a:link {
+  color: rgb(240, 91, 11); /* Unvisited link color */
+}
+
+a:visited {
+  color: rgb(15, 15, 255); /* Visited link color */
+}
+
+a:active {
+  color: rgb(23, 144, 230); /* Active link color */
+}
+
+a.harryclass.rohan-class[href]:hover {
+  color: blueviolet;
+}
+
+.anchorfirst:hover {
+  color: rgb(47, 127, 192);
+}
+
+.anchorsecond:hover {
+  color: red;
+}
+
+.anchorthird:hover {
+  color: purple;
+}
+
+/* Media Styles */
+video {
+  width: 640px;
+  height: 360px;
+}
+
+/* Table and List Styles */
+table {
+  display: inline-block;
+  padding-left: 0;
+  text-align: left;
+}
+
+td {
+  border: 2px solid black;
+}
+
+ul {
+  display: inline-block;
+  padding-left: 0;
+  text-align: left;
+  /* Customize list styles as needed */
+  /* list-style: devanagari; */
+  /* background-color: yellow; */
+  /* list-style-position: inside; */
+  /* list-style: disc inside url("example.gif"); */
+  /* list-style-image: url("example.gif"); */
+}
+
+/* Custom List Styles with Icons */
+.listgoogle,
+.listyt,
+.listhianime {
+  list-style: none; /* Remove default bullet */
+  position: relative;
+  padding-left: 25px; /* Space for icon */
+}
+
+.listgoogle::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("download.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.listyt::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("youtube-icon-2048x2048-oa03jx3h.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.listhianime::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("images.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ID-based Color Styles */
+#idone {
+  color: rgb(47, 127, 192);
+}
+
+#idtwo {
+  color: red;
+}
+
+#idthree {
+  color: purple;
+}
+
+/* Class-based Color Styles */
+.cpurple {
+  color: purple;
+}
+
+.cred {
+  color: red;
+}
+
+/* Attribute Selector Styles */
+[data-x="a"] {
+  color: maroon;
+}
+
+/* Heading Styles */
+.heading {
+  background-color: aquamarine;
+  position: sticky;
+  top: 0;
+  border: 2px solid black;
+  margin: 20px auto;
+  width: 700px;
+  height: 9vh;
+  padding: 0;
+  box-shadow: 11px 10px 7px 0px #888888;
+  text-shadow: 6px 3px 8px #888888;
+  border-radius: 44px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(0, 0, 0);
+}
+
+/* Box and Child Div Styles */
+.box {
+  border: 2px solid rgb(0, 0, 15);
+  box-shadow: 11px 10px 7px 0px #888888;
+  text-shadow: 6px 3px 8px #888888;
+  border-radius: 11px;
+  margin: 54px auto;
+  width: 1000px;
+  height: 584px;
+  background-color: aquamarine;
+}
+
+@media only screen and (max-width: 187px) {
+  body {
+    background-color: steelblue;
+  }
+  .box {
+    flex-direction: column;
+  }
+}
+
+.div {
+  box-shadow: 11px 10px 7px 0px #888888;
+  text-shadow: 6px 3px 8px #888888;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+/* Individual Divs with Positioning */
+.div1 {
+  width: 40%;
+  border: 2px solid black;
+  position: relative;
+  left: 60px;
+  top: 4px;
+  background-color: rgb(112, 55, 235);
+  color: white;
+}
+
+.div2 {
+  width: 40%;
+  border: 2px solid black;
+  position: relative;
+  left: 60px;
+  top: 60px;
+  background-color: rgb(181, 51, 92);
+  color: white;
+}
+
+.div3 {
+  width: 40%;
+  border: 2px solid black;
+  position: relative;
+  left: 33vw;
+  top: -48vh;
+  height: 24vh;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  background-color: rgb(163, 44, 199);
+  color: white;
+}
+
+.div4 {
+  width: 40%;
+  border: 2px solid black;
+  position: relative;
+  left: 530px;
+  top: -338px;
+  background-color: rgb(205, 46, 176);
+  color: white;
+}
+
+/* Additional Element Styles */
+#ipre {
+  border: 2px solid black;
+  width: 700px;
+  margin: auto; /* Centers the element horizontally */
+  color: red;
+}
+
+.preclass {
+  background-color: rgb(47, 14, 82);
+}
+
+.cards {
+  outline: 2px solid black;
+  display: flow-root;
+  width: 1304px;
+  margin: auto;
+  box-shadow: 11px 10px 7px 0px #888888;
+  text-shadow: 6px 3px 8px #888888;
+  border-radius: 11px;
+}
+
+.iso {
+  float: left;
+}
+
+::selection{
+  background-color: black;
+}
+
+/* Notes on Measurement Units */
+/* em: font-size * em */
+/* rem: root font-size (html) * rem */
+/* vmin: minimum of viewport width and height (adapt to smaller viewport dimension) */
+/* vmax: maximum of viewport width and height (adapt to larger viewport dimension) */
